@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/beans"
+			 xmlns:beans="http://www.springframework.org/schema/beans"
+			 xmlns:security="http://www.springframework.org/schema/security"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+			 xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/security
+        http://www.springframework.org/schema/security/spring-security.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+
+	<security:http pattern="/login.html" security="none"/>
+	<security:http pattern="/index.jsp" security="none"/>
+	<security:http pattern="/css/**" security="none"/>
+	<security:http pattern="/img/**" security="none"/>
+	<security:http pattern="/js/**" security="none"/>
+	<security:http pattern="/plugins/**" security="none"/>
+	<security:http pattern="/favicon.ico" security="none"/>
+
+	<!--&lt;!&ndash; use-expressions:设置是否启动SpEL表达式，默认值是true。 &ndash;&gt;-->
+	<!--配置拦截信息
+		 auto-config  是否使用自带页面
+		 use-expressions   是否允许使用spel  表达式
+	  -->
+	<security:http use-expressions="false">
+		<!--配置拦截信息的地址，access确定访问这个路径的权限-->
+		<security:intercept-url pattern="/**" access="ROLE_ADMIN"/>
+
+		<!--&lt;!&ndash; -->
+		<!--开启表单验证 -->
+			<!--username-parameter="username" -->
+			<!--password-parameter="password" -->
+			<!--login-page			:登录页面名称  以  / 开始-->
+			<!--default-target-url	:登录成功后跳转的页面-->
+			<!--login-processing-url:提交的路径的设置 默认值"/login" 可以修改-->
+		<!--&ndash;&gt;-->
+		<!--&lt;!&ndash;always-use-default-target="true"&ndash;&gt;-->
+		<!--&lt;!&ndash;配置具体的页面跳转&ndash;&gt;-->
+		<security:form-login
+                login-processing-url="/login"
+				login-page="/login.html"
+				default-target-url="/admin/index.html"
+				authentication-failure-url="/login.html"/>
+		<!-- 不使用csrf的校验 -->
+        <security:csrf disabled="true"/>
+
+		<!--&lt;!&ndash; 配置框架页面不拦截 &ndash;&gt;-->
+		<security:headers>
+			<security:frame-options policy="SAMEORIGIN"/>
+		</security:headers>
+
+		<!--&lt;!&ndash; 注销的配置 &ndash;&gt;-->
+		<security:logout invalidate-session="true" logout-url="/logout" logout-success-url="/login.html" />
+	</security:http>
+
+	<!-- 引用dubbo 服务 -->
+	<dubbo:application name="pinyougou-manager-web" />
+	<dubbo:registry address="zookeeper://192.168.200.128:2181"/>
+	<!--&lt;!&ndash; 配置认证管理器 &ndash;&gt;-->
+	<security:authentication-manager>
+		<!--&lt;!&ndash; 认证的提供者 &ndash;&gt;-->
+		<security:authentication-provider>
+			<security:user-service>
+				<security:user name="admin" password="{noop}123456" authorities="ROLE_ADMIN"/>
+				<security:user name="杨凌涛" password="{noop}123456" authorities="ROLE_ADMIN"/>
+			</security:user-service>
+		</security:authentication-provider>
+	</security:authentication-manager>
+</beans:beans>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common" />
+        <module name="dao" />
+        <module name="fastDFSDemo" />
+        <module name="freemarkerDemo" />
+        <module name="Interface" />
+        <module name="pojo" />
+        <module name="service-buyer" />
+        <module name="service-page" />
+        <module name="service-search" />
+        <module name="service-sellergoods" />
+        <module name="service-user" />
+        <module name="solr" />
+        <module name="springdatajpa" />
+        <module name="springdatejpa" />
+        <module name="web-manager" />
+        <module name="web-portal" />
+        <module name="web-shop" />
+        <module name="web-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="dao" target="1.8" />
+      <module name="fastDFSDemo" target="1.8" />
+      <module name="freemarkerDemo" target="1.5" />
+      <module name="Interface" target="1.8" />
+      <module name="jpaTest" target="1.8" />
+      <module name="pojo" target="1.8" />
+      <module name="pyg-parent" target="1.8" />
+      <module name="service-buyer" target="1.7" />
+      <module name="service-page" target="1.7" />
+      <module name="service-search" target="1.7" />
+      <module name="service-sellergoods" target="1.7" />
+      <module name="service-user" target="1.7" />
+      <module name="solr" target="1.8" />
+      <module name="springdatajpa" target="1.8" />
+      <module name="springdatejpa" target="1.8" />
+      <module name="web-manager" target="1.7" />
+      <module name="web-portal" target="1.7" />
+      <module name="web-shop" target="1.7" />
+      <module name="web-user" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

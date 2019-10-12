@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/service-buyer" />
+    <file type="web" url="file://$PROJECT_DIR$/service-page" />
+    <file type="web" url="file://$PROJECT_DIR$/service-search" />
+    <file type="web" url="file://$PROJECT_DIR$/service-sellergoods" />
+    <file type="web" url="file://$PROJECT_DIR$/service-user" />
+    <file type="web" url="file://$PROJECT_DIR$/web-manager" />
+    <file type="web" url="file://$PROJECT_DIR$/web-portal" />
+    <file type="web" url="file://$PROJECT_DIR$/web-shop" />
+    <file type="web" url="file://$PROJECT_DIR$/web-user" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/fastDFSDemo/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../jpaTest/pom.xml" />
+        <option value="$PROJECT_DIR$/jpaTest/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ZooKeeperConfig">
+    <option name="host" value="localhost" />
+    <option name="port" value="2181" />
+    <option name="charset" value="UTF-8" />
+    <option name="whitePaths" value="/" />
+    <option name="enabled" value="true" />
+    <option name="tooltip" value="true" />
+  </component>
+</project>

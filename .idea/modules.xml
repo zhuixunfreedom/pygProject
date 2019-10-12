@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dao/dao.iml" filepath="$PROJECT_DIR$/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fastDFSDemo/fastDFSDemo.iml" filepath="$PROJECT_DIR$/fastDFSDemo/fastDFSDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/freemarkerDemo/freemarkerDemo.iml" filepath="$PROJECT_DIR$/freemarkerDemo/freemarkerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pojo/pojo.iml" filepath="$PROJECT_DIR$/pojo/pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pyg-parent.iml" filepath="$PROJECT_DIR$/pyg-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-buyer/service-buyer.iml" filepath="$PROJECT_DIR$/service-buyer/service-buyer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-page/service-page.iml" filepath="$PROJECT_DIR$/service-page/service-page.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-search/service-search.iml" filepath="$PROJECT_DIR$/service-search/service-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-sellergoods/service-sellergoods.iml" filepath="$PROJECT_DIR$/service-sellergoods/service-sellergoods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-user/service-user.iml" filepath="$PROJECT_DIR$/service-user/service-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/solr/solr.iml" filepath="$PROJECT_DIR$/solr/solr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springdatejpa/springdatejpa.iml" filepath="$PROJECT_DIR$/../springdatejpa/springdatejpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-manager/web-manager.iml" filepath="$PROJECT_DIR$/web-manager/web-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-portal/web-portal.iml" filepath="$PROJECT_DIR$/web-portal/web-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-shop/web-shop.iml" filepath="$PROJECT_DIR$/web-shop/web-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-user/web-user.iml" filepath="$PROJECT_DIR$/web-user/web-user.iml" />
+    </modules>
+  </component>
+</project>
